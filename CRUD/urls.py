@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from APIChapter2.views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('APIChapter2.urls')),
+    # path('logingen/',Logingeneric.as_view()),
+    #  path('logingen/<Name>',Logingeneric.as_view()),
 ]

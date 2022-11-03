@@ -7,7 +7,7 @@ class Customer(models.Model):
     City=models.CharField(max_length=50,blank=True)
     State=models.CharField(max_length=20,blank=True)
     Mobile=models.IntegerField(max_length=50,blank=True)
-    EmailId=models.EmailField(max_length=50,blank=True)
+    EmailId=models.EmailField()
     Password=models.CharField(max_length=50,blank=True)
 
 class Vendor(models.Model):

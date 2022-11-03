@@ -7,7 +7,4 @@ class API(serializers.ModelSerializer):
         fields=('Name','EmailId','Password')
 
 
-class API2(serializers.ModelSerializer):
-    class Meta:
-        model=Vendor
-        fields=('Name','EmailId','Password')        
+       
