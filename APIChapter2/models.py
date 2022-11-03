@@ -9,6 +9,9 @@ class Customer(models.Model):
     Mobile=models.IntegerField(max_length=50,blank=True)
     EmailId=models.EmailField()
     Password=models.CharField(max_length=50,blank=True)
+    id=models.IntegerField(max_length=50,blank=True,primary_key=True)
+    def __str__(self): 
+        return self.Name
 
 class Vendor(models.Model):
     Name=models.CharField(max_length=50,blank=True)

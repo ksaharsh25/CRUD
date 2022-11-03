@@ -21,6 +21,6 @@ from APIChapter2.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('APIChapter2.urls')),
-    # path('logingen/',Logingeneric.as_view()),
+    
     #  path('logingen/<Name>',Logingeneric.as_view()),
 ]
